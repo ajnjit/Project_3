@@ -2,11 +2,9 @@
 This project is an assignment that REST API and Postman to test the GET, POST, PUT, and DELETE methods.
 
 # Postman Screenshot
-![Screenshot (365)](https://user-images.githubusercontent.com/85362067/127086805-cdbf0c4e-e7db-46b4-8907-11889ebb5965.png)
-
+![image](https://user-images.githubusercontent.com/85362067/127681162-9bd8e894-ccb7-497d-b894-a943a5294d22.png)
 
 # GET
-![image](https://user-images.githubusercontent.com/85362067/127680498-4b28aca7-11d8-47cb-9c28-3f504a683884.png)
 ![image](https://user-images.githubusercontent.com/85362067/127680814-5a681a92-508b-41a3-88a9-d65eb793bb1a.png)
 
 # POST
