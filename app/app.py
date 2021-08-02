@@ -1,7 +1,15 @@
 from typing import List, Dict
 import simplejson as json
-from flask import Flask, request, Response, redirect
-from flask import render_template
+from flask import (Flask,
+                    g,
+                   request,
+                   Response,
+                   redirect,
+                    session,
+                    url_for,
+                    render_template,
+                   )
+
 from flaskext.mysql import MySQL
 from pymysql.cursors import DictCursor
 
@@ -16,7 +24,50 @@ app.config['MYSQL_DATABASE_DB'] = 'playersData'
 mysql.init_app(app)
 
 
-@app.route('/', methods=['GET'])
+app.secret_key = 'secretkeysecretkey'
+
+
+@app.before_request
+def before_request():
+    g.user = None
+
+    if 'user_id' in session:
+        user = [x for x in users if x.id == session['user_id']][0]
+        g.user = user
+
+class User:
+    def __init__(self, id, username, password):
+        self.id = id
+        self.username = username
+        self.password = password
+
+    def __repr__(self):
+        return f'<User: {self.username}>'
+
+users = []
+users.append(User(id=1, username='Ashley', password='password'))
+users.append(User(id=2, username='John', password='secret'))
+users.append(User(id=3, username='Mary', password='something'))
+
+
+@app.route('/', methods=['GET', 'POST'])
+def login():
+    if request.method == 'POST':
+        session.pop('user_id', None)
+
+        username = request.form['username']
+        password = request.form['password']
+
+        user = [x for x in users if x.username == username][0]
+        if user and user.password == password:
+            session['user_id'] = user.id
+            return redirect(url_for('index'))
+        return redirect(url_for('login'))
+
+    return render_template('login.html')
+
+
+@app.route('/index', methods=['GET'])
 def index():
     user = {'username': 'Players Project'}
     cursor = mysql.get_db().cursor()
@@ -123,8 +174,6 @@ def api_add() -> str:
     mysql.get_db().commit()
     resp = Response(status=201, mimetype= 'application/json')
     return resp
-
-
 
 
 @app.route('/api/v1/players/<int:player_id>', methods=['DELETE'])
