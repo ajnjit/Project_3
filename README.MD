@@ -1,20 +1,17 @@
 # Project Description
-This project is an assignment that REST API and Postman to test the GET, POST, PUT, and DELETE methods.
+This project is an assignment that uses login to access my Players database website.
 
-# Postman Screenshot
-![image](https://user-images.githubusercontent.com/85362067/127681162-9bd8e894-ccb7-497d-b894-a943a5294d22.png)
+# Login Screenshot 1
+![Screenshot (500)](https://user-images.githubusercontent.com/85362067/127933049-8887f1f0-affb-4286-ac62-42e88829ca03.png)
 
-# GET
-![image](https://user-images.githubusercontent.com/85362067/127680814-5a681a92-508b-41a3-88a9-d65eb793bb1a.png)
+# Login Screenshot 2
+![Screenshot (506)](https://user-images.githubusercontent.com/85362067/127933056-261e8493-8909-43d7-ab7a-0223d15caa83.png)
 
-# POST
-![image](https://user-images.githubusercontent.com/85362067/127680854-95a6f9ae-7b18-4a59-be0f-194cd967550a.png)
-![image](https://user-images.githubusercontent.com/85362067/127680876-85693af9-fe09-4587-9c76-3769470bcdd6.png)
+# Login Screenshot 3
+![Screenshot (508)](https://user-images.githubusercontent.com/85362067/127933214-af369604-db5f-4a58-8d18-157a00131871.png)
 
-# PUT
-![image](https://user-images.githubusercontent.com/85362067/127680913-6111b983-5e25-4ffc-ac19-cfd237dcd570.png)
-![image](https://user-images.githubusercontent.com/85362067/127680932-3cf920f8-8366-4dca-8dec-cae0e3b5a0ba.png)
 
-# DELETE
-![image](https://user-images.githubusercontent.com/85362067/127680966-5061643f-7198-47d0-96fd-210926b0bb5f.png)
-![image](https://user-images.githubusercontent.com/85362067/127680976-f7f90440-726d-4b2a-850e-9779e19a3fa3.png)
+
+
+
+
