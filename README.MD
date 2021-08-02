@@ -2,6 +2,16 @@
 # Project Description
 This project is an assignment that uses login to access my Players database website and showcase all my records.
 
+### If you use the login and show all records:
+Timely submission and Github link working (10%) <br>
+Dockerfile available and running properly (20%)<br>
+README contains details on how to run the program(10%) <br>
+An API endpoint is available for showing the records and it is working properly (30%) <br>
+Login and Registration process is working properly (30%) <br>
+
+## Dockerfile 
+![Screenshot (508)](https://user-images.githubusercontent.com/85362067/127934932-c1688a07-8727-4d1b-a9f2-23aac5cbedae.png)
+
 ## API Endpoint 
 This is the PDF file showing all my API requests.
 
@@ -19,6 +29,9 @@ This is a user (Mary) logging in.
 Mary has successfully logged in.
 ![Screenshot (507)](https://user-images.githubusercontent.com/85362067/127933290-240b4bcc-4190-4145-a786-9f20d1138e7d.png)
 
+## Registration Screenshot
+This how I created my users. I created 3 users (Ashley, John, and Mary) and 3 passwords.
+![Screenshot (509)](https://user-images.githubusercontent.com/85362067/127935193-b895b73f-1b8a-4b52-9d2b-8d5a4cd08b7e.png)
 
 
 
